@@ -1,0 +1,22 @@
+.page{
+    background-color: aliceblue;
+    width: 90%;
+    display: inline-block;
+    position: relative;
+    
+}
+
+.image {
+    float: left;
+    width: 40%;
+    margin: 5%;
+    background-color: brown;
+    
+}
+
+.text{
+    float: right;
+    width: 40%;
+    margin: 5%;
+    background-color: blueviolet;
+}

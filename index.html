@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+        <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet">
+        <title>ArrSoundFM | 92.7 Canberra and 90.3 Tuggeranong</title>
+        <link href="assets/CSS/mystyle.css" rel="stylesheet" style="text/css">
+        
+    </head> 
+    
+    <body>
+        <div class="page">
+            <div class="inner">
+                <!--Navigation bar and heading-->
+                <div class="header-container">
+                    <header>
+                        <nav class="nav-primary">
+                            <ul class="topnav" id="myTopnav">
+                                <li id="home"><a href="index.html" alt="home page">Home</a></li>
+                                <li id="programs"><a href="programs.html" alt="programs page">Programs</a></li>
+                                <li id="arts"><a href="arts.html" alt="arts diaries page">Arts Diaries</a></li>
+                                <li id="membership"><a href="membership.html" alt="memberships and donations page">Memberships &amp; Donations</a></li>
+                                <li id="supporters"><a href="supporters.html" alt="supporters page">Supporters</a></li>
+                                <li id="about"><a href="about.html" alt="about us page">About Us</a></li>
+                                <li id="contact"><a href="contact.html" alt="contact us page">Contact Us</a></li>
+                                <li class="icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">&#9776;</a></li>
+                            </ul>
+                        </nav>            
+                
+                        <div class="title">
+                            <h1><a href="index.html" title="ArtSoundFM" rel="home">ArtSoundFM</a></h1>
+                            <h2>92.7 Canberra and 90.3 Tuggeranong</h2>
+                        </div> 
+              
+                    </header> <!-- End of header-->
+                    
+                    <!--JavaScript for the responsive menu-->                       
+                     <script>
+                        function myFunction() {
+                            var x = document.getElementById("myTopnav");
+                            if (x.className === "topnav") {x.className += " responsive";    
+                            } else {x.className = "topnav";}
+                        }
+                    </script>
+                </div> <!-- End of header-container-->
+                
+                <!--Main Content-->
+                <div class="main-container">
+                    <main>
+                        <div class="main-content">
+                            <div class="search">
+                                <form>
+                                  <input type="text" name="search" placeholder="Search..">
+                                </form>
+                            </div>
+                            <div class="welcome">
+                                <h2>Welcome</h2>
+
+                                <p>ArtSound FM is a volunteer–powered community radio station in Canberra, Australia. We promote and nurture the full spectrum of visual and performing artists, and broadcast a unique mix of jazz, blues, folk, world and classical music.</p>
+                           
+                                <div class="online-music">
+                                    <img class= "audio-img" src="assets/images/special_kingston2.jpg" alt="online music image"/>
+                                    <div class="audio">
+                                        <audio controls>
+                                        <source src="http://119.15.96.188/stream2.mp3" type="audio/mpeg">
+                                        </audio>
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="notices">
+                                <h3>Notices and Upcoming Events</h3>
+                                <div class="button">
+                                    <button class="left-button" onclick="plusDivs(-1)">&#10094;</button>
+                                    <button class="right-button" onclick="plusDivs(1)">&#10095;</button>
+                                </div>
+                                <div class="slideshow-event">
+                                    <div class="event-info">
+                                        <div class="event-img">
+                                            <img src="http://www.artsound.fm/wp-content/uploads/spring-bookfair-2017-flier-233x300.jpg" alt="event images"/>
+                                        </div>
+                                        <div class="notice-info">
+                                            <h4>Spring Book Fair</h4>
+                                            <h5>Nov 4 @ 10:00am - Nov 5 @ 4:00pm</h5>
+                                            <p>Thanks to everyone for your donations of books, CDs, vinyl and DVDs for our Spring Book and Music Fair.  Our office will be open Monday to Friday 10am to 4pm until the book fair to receive donations.</p>
+
+                                            <p> Please keep them coming in and let everyone know about this important fundraising event. The fair will be 10am to 4pm on both days</p>
+                                        </div>
+                                    </div>
+                                    <div class="event-info">
+                                        <div class="event-img">
+                                            <img src="http://www.artsound.fm/wp-content/uploads/music-quiz-poster-213x300.jpg" alt="event images"/>
+                                        </div>
+                                        <div class="notice-info">
+                                            <h4 >Name That Tune: Musical Quiz Night</h4>
+                                            <h5>Nov 24 @ 07:30pm</h5>
+                                            <p>If you fancy yourself as something of a 50s to 70s era music expert then Artsound has the perfect end of year celebratory event for you. Our Name That Tune Music Quiz Night at Eastlake Football Club will be an evening of fun and music facts organised by the inimitable and knowledgeable Brian Leonard.</p>
+
+                                            <p>Have dinner at the Bistro downstairs.Drinks available for purchase at the bar all evening.</p>
+                                            <p>Book for yourself or book a table of eight and make it an early Christmas party with us. There’s a special discount for members and you can include your friends in that price when you book a table or group.</p>
+
+                                            <p>Book early to avoid disappointment and help us have a great end of year fund raising event. Remember everyone can make a difference by being an active Artsound participant.</p>
+
+                                            <p>Supported by  Eastlake Football Club, Regional Wine and Beverage Merchants, Bartercard and Jirra Wines.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <script>
+                                    var slideIndex = 1;
+                                    showDivs(slideIndex);
+
+                                    function plusDivs(n) {
+                                      showDivs(slideIndex += n);
+                                    }
+
+                                    function showDivs(n) {
+                                      var i;
+                                      var x = document.getElementsByClassName("event-info");
+                                      if (n > x.length) {slideIndex = 1}    
+                                      if (n < 1) {slideIndex = x.length}
+                                      for (i = 0; i < x.length; i++) {
+                                         x[i].style.display = "none";  
+                                      }
+                                      x[slideIndex-1].style.display = "block";  
+                                    }
+                                </script>
+                            </div>
+                           
+                                                        
+                            <div class="schedules">
+                                <h3>Local Arts and Concerts Schedule List</h3>
+                                <div class="schedule-list">
+                                    <div class="concert-img">  
+                                        <img src="http://www.artsound.fm/wp-content/uploads/ngg_featured/artcetera.jpg" alt="schedule image">
+                                    </div> 
+                                    <div class="details">
+                                        <div class="details-title">Artcetera Repeats</div>
+                                        <div class="time">
+                                            <p><img class="date-icon" src="assets/images/calendaricon.png" alt="calendar icon">
+                                            Oct 28 @ 8:00 pm – 9:30 pm</p>
+                                            <p> Concerts recorded by ArtSoundFM at the National Folk Festival, held each Easter at Exhibition Park in Canberra. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+
+                </div> <!-- End of main-container-->
+        
+                <div class="footer-container">
+                    <footer>
+                        <div class="left">
+                            <img id="img1" alt="footer image 1" src="assets/images/ACTGov_supported_by.jpg">
+                            <img id="img2" alt="footer image 2" src="assets/images/CBF_logo-1.gif">
+                        </div>
+                        <div class="sponsor">
+                            <p>Sponsors and Partners</p>
+                            <div class="slides">
+                                <img class="mySlides" src="http://www.artsound.fm/wp-content/gallery/Arts-partners/csg-logo.png" alt="partners logo"/>
+                                <img class="mySlides" src="http://www.artsound.fm/wp-content/gallery/Arts-partners/groove-warehouse.png" alt="partners logo"/>
+                                <img class="mySlides" src="http://www.artsound.fm/wp-content/gallery/Arts-partners/into-tomorrow.png" alt="partners logo"/>
+                                <img class="mySlides" src="http://www.artsound.fm/wp-content/gallery/Arts-partners/tuggeranong-arts-centre-e1477739075239-1.png" alt="partners logo"/>
+                            </div>              
+                        </div>
+                        
+                        <script>
+                            var myIndex = 0;
+                            carousel();
+
+                            function carousel() {
+                                var i;
+                                var x = document.getElementsByClassName("mySlides");
+                                for (i = 0; i < x.length; i++) {
+                                   x[i].style.display = "none";  
+                                }
+                                myIndex++;
+                                if (myIndex > x.length) {myIndex = 1}    
+                                x[myIndex-1].style.display = "block";  
+                                setTimeout(carousel, 2000); // Change image every 2 seconds
+                            }
+                        </script>
+                        
+                        <div class="social">
+                            <p>Follow Us on:</p>
+                            <div id="img3"><a href="https://www.facebook.com/artsoundfm" target="_new"><img alt="facebook link" src="http://www.artsound.fm/wp-content/plugins/ultimate-social-media-plus/images/icons_theme/default/default_fb.png"></a></div>
+                            <div id="img4"><a href="https://twitter.com/artsoundfm" target="_new"><img alt="twitter link" src="http://www.artsound.fm/wp-content/plugins/ultimate-social-media-plus/images/icons_theme/default/default_twitter.png"></a></div>
+                        </div>
+                        
+                        <div class= "info">
+                            <a href="https://www.ultimatelysocial.com/?utm_source=usmplus_settings_page&utm_campaign=credit_link_to_homepage&utm_medium=banner" target="_new">Social media &amp; sharing icons </a>
+                            <p>Powered by UltimatelySocial</p>
+                        </div>
+                   </footer> <!-- End Footer-->
+                </div> <!-- End the container of footer-->
+            </div> <!-- End inner-->
+        </div> <!-- End of page-->
+    </body> <!-- End of body-->
+</html> <!--End of HTML-->
